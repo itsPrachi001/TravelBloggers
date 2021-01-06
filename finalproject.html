@@ -1,0 +1,114 @@
+<html>
+<head>
+	<title>travel</title>
+	<style>
+	{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.travel
+{
+	height: 100vh;
+	background-image: url('newp.jpeg');
+	background-size: cover;
+	
+	overflow-x:hidden;
+	position: relative;
+}
+.nav-bar
+{
+	display:flex;
+	padding: 30px 100px;
+}
+.nav-logo img
+{
+	width: 100px;
+}
+.nav-links
+{
+	flex: 1;
+}
+.nav-links ul
+{
+	margin-left: 50px;
+	display: inline;
+}
+.nav-links ul li
+{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 25px;
+}
+.nav-link ul a
+{
+color: #fff;
+text-decoration: none;
+font-size: 13px;
+}
+.nav-links ul li::after{
+	content: '';
+	width: 100%;
+	height:2px;
+	background: white;
+	display: block;
+	margin: auto;
+	transition: 5s;
+}
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+.btn
+{
+	padding: 10px 20px;
+	border:0;
+	background: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+.title
+{
+	margin: 30px 120px;
+	color: white;
+}
+.title
+{
+	font-size: 45px;
+	margin-bottom: 30px;
+}
+ul li { 
+ display: inline-block; }
+ ul li a{
+ 	text-decoration:none;
+ 	color:black;
+ 	padding:5px 20px;
+ 	border: 1px solid black;
+ }
+ ul li a:hover{
+ 	background-color: pink;
+ 	color:white;
+ }
+ </style>
+</head>
+<body>
+	<div class="travel">
+		<div class="nav-bar">
+			<div class="nav-logo">
+				<img src="travel logo.jpeg">
+			</div>
+			<div class="nav-links">
+				<ul>
+					<a href="popular destination.html"><li>DESTINATION</li></a>
+				    <a href="travel.html"><li>TRAVEL</li></a>
+				    <a href="about us.html"><li>ABOUT US</li></a>
+				    <a href="slide.html"><li>SLIDE</li></a>
+			    </ul>
+			    <button type="button" class="btn">HOME</button>
+			</div>
+	    </div>
+		<div class="title">
+			<h1>TRAVEL BLOGGERS</h1>
+		</div>
+	</div>
+</body>
+</html>

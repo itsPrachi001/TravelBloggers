@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Travel</title>
+	
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			font-family:century gothic;
+			box-sizing:border-box;
+		}
+
+		header{
+			background-image: url('22.jpg');
+			height:90vh;
+			background-size: cover;
+			background-position: center;
+
+	     }
+	     .parallax{
+	     	position:absolute;
+	     	width:1500px;
+	     	margin-top:0px; 
+	     	margin-left:0px;
+	     	text-align: center;
+	     }
+	     h1{
+	     	color:white;
+	     	text-transform:uppercase;
+	     	font-size:90px;
+	     	text-align:center;
+	     	margin-top: 100px;
+	     	text-decoration: underline;
+	     	font-family: Lucida Handwriting,Comic Sans MS,Lucida Sans;
+	     }
+	     h2{
+	     	color:black;
+	     	font-size:50px;
+	     	font-family: Lucida Handwriting;
+	     }
+	     .container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display:inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000;
+}
+
+.container:hover .overlay {
+  opacity: .7;
+  
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left:50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: Lucida Handwriting;
+     }
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+  font-size:17px;
+}
+
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+  color:#000000;
+}
+
+
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#About {background-color: lightsteelblue;}
+#Weather {background-color: beige;}
+#Visa {background-color: lightblue;}
+#Currency {background-color: lightgrey;}	
+
+.summer{
+	position:relative;
+	max-width:800px;
+	margin:0 auto;
+}
+
+.summer .theory{
+	position:absolute;
+	bottom:0;
+	background:rgb(0,0,0);
+	background:rgba(0,0,0,0.5);
+	color:#f1f1f1;
+	width:100%;
+	padding:20px;
+}
+.winter{
+	position:relative;
+	max-width:800px;
+	margin:0 auto;
+}
+
+.winter .theory1{
+	position:absolute;
+	bottom:0;
+	background:rgb(0,0,0);
+	background:rgba(0,0,0,0.5);
+	color:#f1f1f1;
+	width:100%;
+	padding:20px;
+}
+.rainy{
+	position:relative;
+	max-width:800px;
+	margin:0 auto;
+}
+
+.rainy .theory2{
+	position:absolute;
+	bottom:0;
+	background:rgb(0,0,0);
+	background:rgba(0,0,0,0.5);
+	color:#f1f1f1;
+	width:100%;
+	padding:20px;
+}
+.spring{
+	position:relative;
+	max-width:800px;
+	margin:0 auto;
+}
+
+.spring .theory3{
+	position:absolute;
+	bottom:0;
+	background:rgb(0,0,0);
+	background:rgba(0,0,0,0.5);
+	color:#f1f1f1;
+	width:100%;
+	padding:20px;
+}
+.part{
+    text-align:center;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  border: 1px solid #ddd;
+  margin-top: -1px; 
+  background-color: #f6f6f6;
+  padding: 12px;
+}
+.ssp{
+  text-align: inline-block;
+}
+.button{
+  align-items:center;
+}
+
+	</style>
+</head>
+<body>
+	<header>
+		
+		<div class="parallax">
+	    <h1>TRAVEL<br> IN<br>INDIA </h1>
+
+	</header>
+	<main>
+<button class="tablink" onclick="openPage('About', this, 'lightsteelblue')" >About</button>
+<button class="tablink" onclick="openPage('Weather', this, 'beige')">Weather</button>
+<button class="tablink" onclick="openPage('Visa', this, 'lightblue')">Visa</button>
+<button class="tablink" onclick="openPage('Currency', this, 'lightgrey')">Currency</button>
+
+<div id="About" class="tabcontent">
+  <h2>About India</h2>
+  
+  <div class="container">
+				<img src="1.1.jpg" alt="ancient india" class="image">
+				<div class="overlay">
+				<div class="text">India's history and culture is dynamic, spanning back to the beginning of human civilization. It begins with a mysterious culture along the Indus River and in farming communities in the southern lands of India. </div>
+			
+		</div>
+		</div>
+			    <div class="container">
+				<img src="2.jpg" alt="medeival india"  class="image">
+				<div class="overlay">
+				<div class="text">For a period that has come to be so strongly associated with the Islamic influence and rule in India, Medieval Indian history went for almost three whole centuries under the so-called indigenous rulers, that included the Chalukyas, the Pallavas, the Pandyas, the Rashtrakutas, the Muslims rulers and finally the Mughal Empire. </div>
+			</div>
+			</div>
+			    <div class="container">
+				<img src="3.jpg" alt="mordern india"  class="image">
+				<div class="overlay">
+				<div class="text">In ancient times, people from all over the world were keen to come to India. ThePersians followed by the Iranians and Parsis immigrated to India. Then came theMoghuls and they too settled down permanently in India.</div>
+			</div>
+		    </div>
+</div>
+
+<div id="Weather" class="tabcontent">
+  <h2>Weather</h2>
+  <div class="summer">
+  	<img src="10.jpg" alt="summer" style="width:100%;" class="image">
+  	<div class="theory">
+  		<h3>Summer</h3>
+  		<p>Going from March to June, the summer season is the hottest time in most of the parts of India. The most hectic season of this tropical country, summer scorches almost all the parts of India with sweltering heat. Hot winds and scorching sun are the two most inseparable constituents of Indian summer. Light cotton clothes remain the order of the day to protect yourself of the prickly heat of Indian summer.</p>
+  	 
+  	</div>
+  </div>
+  <br>
+  <div class="winter">  
+  	<img src="11.jpg" alt="winter" style="width:100%;" class="image">
+  	<div class="theory1">
+  		<h3>Winter</h3>	
+  		<p>Winter season in India, especially in North India, marks the reigning period of mild sun and harsh cold weather.The month of October when the cold winds begin to travel in parts of Jammu and Kashmir, Delhi, Punjab and Haryana that marks the beginning of winter season in North India. To them, November too follows the suit. However, October is not a winter month. It just witnesses the transition of Southwest Monsoon into Northeast Monsoon and a high variation in temperature. </p>
+  	</div>
+  </div>
+  <br>
+  <div class="rainy">  
+  	<img src="12.jpg" alt="rainy" style="width:100%;" class="image">
+  	<div class="theory2">
+  		<h3>Rainy</h3>	
+  		<p>Monsoon or rainy season, lasting from June to September. The season is dominated by the humid southwest summer monsoon, which slowly sweeps across the country beginning in late May or early June. Monsoon rains begin to recede from North India at the beginning of October. South India typically receives more rainfall.</p>
+  	</div>
+  </div>
+  <br>
+  <div class="spring">  
+  	<img src="14.jpg" alt="spring" style="width:100%;" class="image">
+  	<div class="theory3">
+  		<h3>Spring</h3>	
+  		<p>In accordance with the Hindu calendar, spring in India runs from around mid February to mid April, and is known as Vasant (or Basant). The vernal equinox on March 20 or 21, which marks the beginning of spring in the northern hemisphere, occurs midway through Vasant.</p>
+  	</div>
+  </div>
+</div>
+ 
+
+
+<div id="Visa" class="tabcontent">
+  <h2>Visa</h2>
+   <div class="part"> 
+  <p>Note: COVID-19 Advisory: COVID-19 Travel Advisory by Ministry of Tourism (Government of India).
+  	<br>All foreign nationals entering India are required to possess a valid international travel document in the form of a national passport with a valid visa obtained from an Indian Mission or Post abroad. Tourist Visa can only be granted to a foreigner who does not have a residence or occupation in India and whose sole objective of visiting India is recreation, sight seeing, casual visit to meet friends and relatives, etc.</p>
+  	<br>
+  	<h3>E-VISA FACILITY</h3>
+    <p>e-Visa Facility is available for nationals of following countries/territories:</p>
+    <br>
+    <ul>
+  <li>Albania </li><li>Andorra</li>
+  <li>Angola </li><li>Anguilla</li>
+  <li>Belgium </li><li>Austria</li>
+  <li>Denmark</li><li>Finland</li>
+  <li>Gabon</li><li>France</li>
+  <li>Mexico</li><li>Mongolia</li>
+  <li>Kenya</li><li>Malaysia</li>
+</ul>
+ </div>
+  <div class="eligibility">
+  <h3>Eligibility</h3>
+  <p></p>
+  <h5 class="visa_middle text"> </h5>
+  <p>
+    "Internaional Travellers whose sole objective of visiting India is recreation, sight seeing, causal visit to meet friends or relatives, short duration medical treatment or casual business visit."
+  </p>
+  <hr class="bottomline1">
+  <h5 class="visa_middle text"> </h5>
+  <p>
+    "Passport should have at least six months validity from the date of arrival in India. The passport should have at least two blank pages for stamping by the Immigration Officer."
+  </p>
+  <hr class="bottomline1">
+  <h5 class="visa_middle text"> </h5>
+  <p>
+    "International Travellers should have return ticket or onward journey ticket,with sufficient money to spend during his/her stay in India."
+  </p>
+  <hr class="bottomline1">
+  <h5 class="visa_middle text"> </h5>
+  <p>
+    "International Travellers having Pakistani Passport or Pakistani origin may please apply for regular Visa at Indian Mission."
+  </p>
+  <hr class="bottomline1">
+  <h5 class="visa_middle text"> </h5>
+  <p>
+    "Not available to Diplomatic/Official Passport Holders or Laissez-passer travel document holders."
+  </p>
+  <hr class="bottomline1">
+  <h5 class="visa_middle text"> </h5>
+  <p>
+    "Not available to individuals endorsed on Parent's/Spouse's Passport i.e. each individual should have a separate passport."
+  </p>
+  <hr class="bottomline1">
+  <h5 class="visa_middle text"> </h5>
+  <p>
+    "Not available to International Travel Document Holders."
+  </p>
+  <hr class="bottomline1">
+  <h5 class="visa_middle text"> </h5>
+  </div>
+  <div class=button>
+  <button type="button" onclick="alert('Hello world!')">Apply Online!</button>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="Currency" class="tabcontent">
+  <h2>About Indian Currency</h2>
+  <p>India is one of the oldest civilizations in the world with a kaleidoscopic variety and rich cultural heritage. It has achieved all-round socio-economic progress during the last 65 years of its Independence. India has become self-sufficient in agricultural production and is now one of the top industrialized countries in the world and one of the few nations to have gone into outer space to conquer nature for the benefit of the people. It covers an area of 32, 87,263 sq. km, extending from the snow-covered Himalayan heights to the tropical rain forests of the south. As the 7th largest country in the world, India stands apart from the rest of Asia, marked off as it is by mountains and the sea, which give the country a distinct geographical entity. Bounded by the Great Himalayas in the north, it stretches southwards and at the Tropic of Cancer, tapers off into the Indian Ocean between the Bay of Bengal on the east and the Arabian Sea on the west. As you travel, India offers a range of vast tourism choices, diverse in land and nature, people, tribes, cuisine, faiths, dance forms, music, arts, crafts, adventure, sport, spirituality, history; even these vary as you journey from one state to another. As a country, India has achieved all-round socio-economic progress in the last 70 years of independence. The change is clearly visible in the Tier I and Tier II cities. However, the fascinating aspect lies in the stark difference as you travel through the new and old parts of its cities. From world-class airports and hotels, luxurious shopping malls, restaurants, pubs and cafes to overcrowded streets and alleyways, in the same cities, filled with thousands of little shops offering every possible modern and ethnic product and native street food is a fascinating experience.</p>
+  <img src="19.jpg" alt="currency" style="width:40%;" class="image">
+  <div class="ssp">
+  <p>The Indian rupee (sign: ₹; code: INR), is the official currency of the Republic of India. The Currency Department in RBI attends to the core statutory function of note and coin issue and currency management. This involves forecasting the demand for fresh notes and coins, placing the indent with four printing presses and mints, receiving supplies against those indents and distributing them through the 18 offices of the Bank. The currency has been derived from the silver coins issued by Sultan Sher Shah Suri and later continued by the Mughal Empire.</p>
+  <p>Indian coins: 1  2  5  10 <br>
+     Indian notes: 5  10  20  50  100  200  500  2000</p></div>
+</div>
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+
+document.getElementById("defaultOpen").click();
+</script>
+		
+
+
+	</main>
+</body>
+</html>
